@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996429ac-f55b-4465-aed3-645d321f9c0d" name="Changes" comment="initial commit" />
+    <list default="true" id="996429ac-f55b-4465-aed3-645d321f9c0d" name="Changes" comment="Add tests to CharacterModelTest.php">
+      <change beforePath="$PROJECT_DIR$/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Main.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662557171275</updated>
       <workItem from="1662557172634" duration="2142000" />
+      <workItem from="1662559321676" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662558783112</created>
@@ -60,7 +63,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662558783112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1662559365143</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559365143</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Execute Initial Test Setup">
+      <created>1662559468426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559468426</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add tests to CharacterModelTest.php">
+      <created>1662559664770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559664770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +104,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Execute Initial Test Setup" />
+    <MESSAGE value="Add tests to CharacterModelTest.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests to CharacterModelTest.php" />
   </component>
 </project>
