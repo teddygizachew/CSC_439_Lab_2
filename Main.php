@@ -395,7 +395,7 @@ class ChallengeModel {
         );
         //initialize succes/fail counts at 0.
         $success_count = 0;
-        $fail_count = 0;
+        $failure_count = 0;
         //foreach of the options in the attribute given in the param:
         //(Note the bug here, should be foreach($options as $option) )
         //+1 for static analysis, -1 for coverage analysis
