@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996429ac-f55b-4465-aed3-645d321f9c0d" name="Changes" comment="initial commit" />
+    <list default="true" id="996429ac-f55b-4465-aed3-645d321f9c0d" name="Changes" comment="Add method to clear available attributes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryRandomOracleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryRandomOracleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CharacterModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/html/Main.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/html/Main.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/html/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/html/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/html/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,17 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/student/Documents/Fall22/CSC_439/Labs/Lab_2/lab_2_code&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Dockerfile&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "1c414f",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/student/Documents/Fall22/CSC_439/Labs/Lab_2/lab_2_code",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="CharacterModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="CharacterModelTest" file="$PROJECT_DIR$/CharacterModelTest.php" scope="Class" />
@@ -52,6 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662557171275</updated>
       <workItem from="1662557172634" duration="2142000" />
+      <workItem from="1662559321676" duration="1090000" />
+      <workItem from="1662560420006" duration="6285000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662558783112</created>
@@ -60,7 +70,35 @@
       <option name="project" value="LOCAL" />
       <updated>1662558783112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1662559365143</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559365143</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Execute Initial Test Setup">
+      <created>1662559468426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559468426</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add tests to CharacterModelTest.php">
+      <created>1662559664770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559664770</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add method to clear available attributes">
+      <created>1662559800847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662559800847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +118,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Execute Initial Test Setup" />
+    <MESSAGE value="Add tests to CharacterModelTest.php" />
+    <MESSAGE value="Add method to clear available attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method to clear available attributes" />
   </component>
 </project>

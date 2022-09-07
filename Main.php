@@ -142,6 +142,10 @@ class CharacterModel {
         }
     }
 
+    public static function clear_available_attributes(): void {
+        CharacterModel::$available_attributes = array();
+    }
+
     /**
      * Generates character attibutes by selecting random attributes from the
      * pool, and then assigning them a random HIGH/LOW level.
