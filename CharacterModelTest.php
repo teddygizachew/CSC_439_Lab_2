@@ -25,11 +25,8 @@ class CharacterModelTest extends TestCase
         $this->assertEquals("teddy", $name);
     }
 
-//    public function test__construct() {
-//
-//    }
-
-    public function test_increment_attribute() {
+    public function test_increment_attribute()
+    {
         // create the sut
         // Create a stub for the SomeClass class.
         $stub = $this->createStub(RNG::class);
@@ -40,10 +37,13 @@ class CharacterModelTest extends TestCase
         $sut = new CharacterModel($bro, "teddy", 1); // force it to have speed
 
         // call a method on it
-        $result = $sut->increment_attribute("Speed");
+        $sut->increment_attribute("Speed");
 
         // verify the results
         $this->assertEquals("HIGH", $sut->get_attributes()["Speed"]);
+
+        $result = $sut->increment_attribute("Speed");
+        $this->assertFalse($result);
     }
 
     public function test_increment_attribute_exception()
@@ -76,6 +76,9 @@ class CharacterModelTest extends TestCase
         // verify the results
         $this->assertTrue($result);
         $this->assertEquals("LOW", $sut->get_attributes()["Speed"]);
+
+        $result = $sut->decrement_attribute("Speed");
+        $this->assertFalse($result);
     }
 
     public function test_decrement_attribute_exception()
@@ -88,7 +91,16 @@ class CharacterModelTest extends TestCase
         $sut = new CharacterModel($bro, "teddy", 0);
 
         // call method
-        $result = $sut->decrement_attribute("Speed");
+        $sut->decrement_attribute("Speed");
+    }
+
+    public function test_generate_character_exception()
+    {
+        $this->expectException(CharacterModelException::class);
+        $bro = new BinaryRandomOracle(new RNG());
+        $sut = new CharacterModel($bro, "teddy", 1);
+
+        $sut->generate_character($bro, "teddy", 2);
     }
 
     public function test_add_available_attribute()
@@ -107,7 +119,8 @@ class CharacterModelTest extends TestCase
         $this->assertFalse($result);
     }
 
-    public function test_increment_brownie_points() {
+    public function test_increment_brownie_points()
+    {
         // create the sut
         $rng = new RNG();
         $bro = new BinaryRandomOracle($rng);
@@ -123,7 +136,8 @@ class CharacterModelTest extends TestCase
         $this->assertEquals(0, $result);
     }
 
-    public function test_decrement_brownie_points() {
+    public function test_decrement_brownie_points()
+    {
         // create the sut
         $rng = new RNG();
         $bro = new BinaryRandomOracle($rng);
@@ -135,6 +149,77 @@ class CharacterModelTest extends TestCase
         // verify the results
         $this->assertEquals(0, $result);
     }
+
+    public function test_get_brownie_points()
+    {
+        // create the sut
+        $rng = new RNG();
+        $bro = new BinaryRandomOracle($rng);
+        $sut = new CharacterModel($bro, "teddy", 1);
+
+        // call a method on it
+        $result = $sut->get_brownie_points();
+//        echo "\n\n";
+//        echo $result;
+
+        // verify the results
+        $this->assertEquals(0, $result);
+
+        $sut->increment_brownie_points(10);
+        $result = $sut->get_brownie_points();
+//        echo "\n\n";
+//        echo $result;
+        $this->assertEquals(10, $result);
+    }
+
+    public function test_get_attributes() {
+        // create the sut
+        $rng = new RNG();
+        $bro = new BinaryRandomOracle($rng);
+        $sut = new CharacterModel($bro, "teddy", 1);
+
+        // call a method on it
+        $result = $sut->get_attributes();
+//        echo "\n\n";
+//        echo count($result);
+
+        // verify the results
+        $this->assertCount(1, $result);
+    }
+
+    public function test__constructor() {
+        // create the sut
+        $bro = new BinaryRandomOracle(new RNG());
+        $sut = new CharacterModel($bro, "apple", 1);
+
+        $name = $sut->get_name();
+        $brownie_points = $sut->get_brownie_points();
+        $attributes = $sut->get_attributes();
+
+        $this->assertCount(1, $attributes);
+        $this->assertEquals("apple", $name);
+        $this->assertEquals(0, $brownie_points);
+
+    }
+
+//    public function test_generate_character()
+//    {
+//        // create the sut
+//        $rng = new RNG();
+//        $bro = new BinaryRandomOracle($rng);
+//        $sut = new CharacterModel($bro, "teddy", 1);
+//
+//        // call a method on it
+//        $sut->generate_character($bro, "tedBear", 1);
+//        // verify the results
+//        $result = $sut->get_attributes();
+//        echo "\n\n";
+//        echo count($result);
+//
+//        foreach ($result as $member) {
+//            echo $member;
+//        }
+//    }
 
     // happens after each test case
     public function tearDown(): void
