@@ -425,6 +425,87 @@ class ChallengeModel {
         //finally, return $rv
         return $rv;
     }
+
+    /**
+     * Getter for the id attribute
+     *
+     * @return string
+     */
+    public function get_id(): string {
+        return $this->id;
+    }
+
+    /**
+     * Getter for the intro_text attribute
+     *
+     * @return string
+     */
+    public function get_intro_text(): string {
+        return $this->intro_text;
+    }
+
+    /**
+     * Getter for the test_attribute attribute
+     *
+     * @return string
+     */
+    public function get_test_attribute(): string {
+        return $this->test_attribute;
+    }
+
+    /**
+     * Generate for the threat attribute
+     *
+     * @return string
+     */
+    public function get_threat(): string {
+        return $this->threat;
+    }
+
+    /**
+     * Generate for the succeed_next attribute
+     *
+     * @return string
+     */
+    public function get_succeed_next(): string {
+        return $this->succeed_next;
+    }
+
+    /**
+     * Generate for the failure_next attribute
+     *
+     * @return string
+     */
+    public function get_failure_next(): string {
+        return $this->failure_next;
+    }
+
+    /**
+     * Generate for the equal_options array
+     *
+     * @return array An array of 3 arrays
+     */
+    public function get_equal_options(): array {
+        return $this->equal_options;
+    }
+
+    /**
+     * Generate for the character_advantage_options array
+     *
+     * @return array An array of 2 arrays
+     */
+    public function get_character_advantage_options(): array {
+        return $this->character_advantage_options;
+    }
+
+    /**
+     * Generate for the challenge_advantage_options array
+     *
+     * @return array An array of 2 arrays
+     */
+    public function get_challenge_advantage_options(): array {
+        return $this->challenge_advantage_options;
+    }
 }
 
 /*

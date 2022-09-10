@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996429ac-f55b-4465-aed3-645d321f9c0d" name="Changes" comment="rename failure count variable">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="996429ac-f55b-4465-aed3-645d321f9c0d" name="Changes" comment="more tests to BinaryRandomOracleTest and CharacterModelTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryRandomOracleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryRandomOracleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChallengeModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengeModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/html/Main.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/html/Main.php.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/html/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/html/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/html/index.html" afterDir="false" />
@@ -38,17 +38,21 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/student/Documents/Fall22/CSC_439/Labs/Lab_2/lab_2_code",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="PHPUnit.BinaryRandomOracleTest.test_get_outcome_exception">
+  <component name="RunManager" selected="PHPUnit.ChallengeModelTest">
     <configuration name="BinaryRandomOracleTest.test_get_outcome" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="BinaryRandomOracleTest" file="$PROJECT_DIR$/BinaryRandomOracleTest.php" method="test_get_outcome" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="BinaryRandomOracleTest.test_get_outcome_exception" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="BinaryRandomOracleTest" file="$PROJECT_DIR$/BinaryRandomOracleTest.php" method="test_get_outcome_exception" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ChallengeModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ChallengeModelTest" file="$PROJECT_DIR$/ChallengeModelTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="CharacterModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -60,12 +64,14 @@
     </configuration>
     <list>
       <item itemvalue="PHP Script.Unnamed" />
+      <item itemvalue="PHPUnit.ChallengeModelTest" />
       <item itemvalue="PHPUnit.BinaryRandomOracleTest.test_get_outcome" />
       <item itemvalue="PHPUnit.BinaryRandomOracleTest.test_get_outcome_exception" />
       <item itemvalue="PHPUnit.CharacterModelTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ChallengeModelTest" />
         <item itemvalue="PHPUnit.BinaryRandomOracleTest.test_get_outcome_exception" />
         <item itemvalue="PHPUnit.BinaryRandomOracleTest.test_get_outcome" />
         <item itemvalue="PHPUnit.CharacterModelTest" />
@@ -83,7 +89,7 @@
       <workItem from="1662557172634" duration="2142000" />
       <workItem from="1662559321676" duration="1090000" />
       <workItem from="1662560420006" duration="19263000" />
-      <workItem from="1662653700116" duration="5031000" />
+      <workItem from="1662653700116" duration="17662000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1662558783112</created>
@@ -134,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662581649070</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="more tests to BinaryRandomOracleTest and CharacterModelTest">
+      <created>1662676899430</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662676899430</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +172,7 @@
     <MESSAGE value="Add method to clear available attributes" />
     <MESSAGE value="Add more tests" />
     <MESSAGE value="rename failure count variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename failure count variable" />
+    <MESSAGE value="more tests to BinaryRandomOracleTest and CharacterModelTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="more tests to BinaryRandomOracleTest and CharacterModelTest" />
   </component>
 </project>
