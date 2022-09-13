@@ -44,6 +44,10 @@ class BinaryRandomOracle {
         array("LOW", "NO", "B")
     );
 
+    public function get_bro_table(): array {
+        return $this->bro_table;
+    }
+
     //An instance of RNG so we can generage numbers
     private RNG $rng;
 
@@ -372,7 +376,7 @@ class ChallengeModel {
         if($result["success"] === false){
             $result["next"] = $this->failure_next;
         } else {
-            $result["next"] = $this->failure_success;
+            $result["next"] = $this->succeed_next;
         }
         return $result;
     }

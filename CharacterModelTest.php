@@ -159,20 +159,17 @@ class CharacterModelTest extends TestCase
 
         // call a method on it
         $result = $sut->get_brownie_points();
-//        echo "\n\n";
-//        echo $result;
-
         // verify the results
         $this->assertEquals(0, $result);
 
         $sut->increment_brownie_points(10);
         $result = $sut->get_brownie_points();
-//        echo "\n\n";
-//        echo $result;
+
         $this->assertEquals(10, $result);
     }
 
-    public function test_get_attributes() {
+    public function test_get_attributes()
+    {
         // create the sut
         $rng = new RNG();
         $bro = new BinaryRandomOracle($rng);
@@ -180,14 +177,12 @@ class CharacterModelTest extends TestCase
 
         // call a method on it
         $result = $sut->get_attributes();
-//        echo "\n\n";
-//        echo count($result);
-
         // verify the results
         $this->assertCount(1, $result);
     }
 
-    public function test__constructor() {
+    public function test__constructor()
+    {
         // create the sut
         $bro = new BinaryRandomOracle(new RNG());
         $sut = new CharacterModel($bro, "apple", 1);
@@ -202,24 +197,25 @@ class CharacterModelTest extends TestCase
 
     }
 
-//    public function test_generate_character()
-//    {
-//        // create the sut
-//        $rng = new RNG();
-//        $bro = new BinaryRandomOracle($rng);
-//        $sut = new CharacterModel($bro, "teddy", 1);
-//
-//        // call a method on it
-//        $sut->generate_character($bro, "tedBear", 1);
-//        // verify the results
-//        $result = $sut->get_attributes();
-//        echo "\n\n";
-//        echo count($result);
-//
-//        foreach ($result as $member) {
-//            echo $member;
-//        }
-//    }
+    public function test_generate_character()
+    {
+        // create the sut
+        $stub = $this->createStub(RNG::class);
+
+        // Configure the stub.
+        $stub->method('choose')->willReturn(1);
+
+        $bro = new BinaryRandomOracle($stub);
+        CharacterModel::add_available_attribute("Speed");
+        CharacterModel::add_available_attribute("Speed2");
+        $sut = new CharacterModel($bro, "teddy", 1);
+
+        // call a method on it
+        $sut->generate_character($bro, "tedBear", 2);
+        // verify the results
+        $result = $sut->get_name();
+        $this->assertEquals("teddy", $result);
+    }
 
     // happens after each test case
     public function tearDown(): void
